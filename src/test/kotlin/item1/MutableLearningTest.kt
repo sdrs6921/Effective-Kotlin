@@ -13,10 +13,10 @@ class MutableLearningTest {
         val expected = 10
 
         //when
-        var given = 10
+        var actual = 10
 
         //then
-        assertThat(given).isEqualTo(expected)
+        assertThat(actual).isEqualTo(expected)
     }
 
     @Test
@@ -26,15 +26,15 @@ class MutableLearningTest {
         val expectedElement1 = 1;
         val expectedElement2 = 2;
         val expectedElement3 = 3;
-        var given: MutableList<Int> = mutableListOf();
+        var actual: MutableList<Int> = mutableListOf();
 
         //when
-        given.add(1)
-        given.add(2)
-        given.add(3)
+        actual.add(1)
+        actual.add(2)
+        actual.add(3)
 
         //then
-        assertThat(given).containsExactly(expectedElement1, expectedElement2, expectedElement3)
+        assertThat(actual).containsExactly(expectedElement1, expectedElement2, expectedElement3)
     }
 
 }
